@@ -68,9 +68,9 @@ RUN apt-get update && \
     rm -rf /tmp/*
 
 ## User account
-RUN adduser --disabled-password --gecos '' theia && \
-    adduser theia sudo && \
-    echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+# RUN adduser --disabled-password --gecos '' theia && \
+#     adduser theia sudo && \
+#     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Install node and yarn
 # From: https://github.com/nodejs/docker-node/blob/6b8d86d6ad59e0d1e7a94cec2e909cad137a028f/8/Dockerfile
